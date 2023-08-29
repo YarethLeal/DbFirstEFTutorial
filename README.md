@@ -1,5 +1,6 @@
 # DbFirstEFTutorial
-Step 1: Create the project
+Step 1: Create the project. 
+
 Select the type of project
 ![DbFirstEF-Step_1](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/f02f0a34-726a-43e1-aea4-93e999bebc2b)
 ![DbFirstEF-Step_2](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/5a52eee0-0008-412a-bebc-d53efd7c6f45)
@@ -8,6 +9,7 @@ Select the framework version and type
 ![DbFirstEF-Step_4](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/c054f7a4-7d1c-437e-a3ca-a3c2b7909a6e)
 
 Step 2: Import the packages
+
 Enter the NuGet package manager
 ![DbFirstEF-Step_5](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/ba4e627c-7b7d-4c07-b85e-4409396e7ea6)
 The database package must be the same as the database type where the script was used.
@@ -17,15 +19,19 @@ These 2 packages are essential:
 
 Step 3: Generate models and database context
 ![DbFirstEF-Step_8](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/42bc4086-beff-4b90-a5dd-5bf4d452eb94)
-The following command must be entered in the console:\n\t
+The following command must be entered in the console:
+
    Scaffold-DbContext "Data Source={Server Name};Initial Catalog=DbFirstEFTutorial;Integrated Security=True; TrustServerCertificate=True;" 
-   Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models \n
-The string format is:\n\t
+   Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+   
+The string format is:
+
    Scaffold-DbContext + Connection string + DB package + Folder where the models are generalized.
 ![DbFirstEF-Step_9](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/b67d2f9e-37a5-4856-9f41-8d48f658c37e)
 ![DbFirstEF-Step_10](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/e00fdc93-d57e-4df7-bd2b-68cafeb5fe5a)
 
 Step 4: Correct sensitive information warning caused by database context
+
 The text string in line 24 is passed to the appsettings.json file, and lines 9-11 and 22-24 are removed.
 ![DbFirstEF-Step_11](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/1d2a9ae1-304c-48b7-a593-6551442bb3ff)
 ![DbFirstEF-Step_12](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/415c064f-595d-4b24-9dbb-1547c0ae35a6)
