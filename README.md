@@ -17,10 +17,10 @@ These 2 packages are essential:
 
 Step 3: Generate models and database context
 ![DbFirstEF-Step_8](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/42bc4086-beff-4b90-a5dd-5bf4d452eb94)
-The following command must be entered in the console:
+The following command must be entered in the console:\n\t
    Scaffold-DbContext "Data Source={Server Name};Initial Catalog=DbFirstEFTutorial;Integrated Security=True; TrustServerCertificate=True;" 
    Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models \n
-The string format is:
+The string format is:\n\t
    Scaffold-DbContext + Connection string + DB package + Folder where the models are generalized.
 ![DbFirstEF-Step_9](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/b67d2f9e-37a5-4856-9f41-8d48f658c37e)
 ![DbFirstEF-Step_10](https://github.com/YarethLeal/DbFirstEFTutorial/assets/66440902/e00fdc93-d57e-4df7-bd2b-68cafeb5fe5a)
